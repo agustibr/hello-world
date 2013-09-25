@@ -22,21 +22,44 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
-        <title>Hello World</title>
+        <title>Hello.js | PhoneGap OAuth</title>
+
+        
+            <link rel="stylesheet" href="assets/css/bootstrap.css">
+            <link rel="stylesheet" href="assets/css/hellojs.css">
+        
+        
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap OAuth</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="assets/js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+        <div class="container">
+    <h3>Login with hello.js !!</h3>
+
+    <p>
+        <button id="profile_facebook" class="btn btn-default btn-signin-facebook facebook" onclick="hello.login('facebook')">signin facebook</button>
+        &nbsp;
+        <button id="profile_google" class="btn btn-default btn-signin-google google" onclick="hello.login('google')">signin google</button>
+        &nbsp;
+        <!--
+        <button id="profile_github" class="btn btn-default btn-signin-github github" onclick="hello.login('github')">signin github</button>
+        &nbsp;
+        <button id="profile_twitter" class="btn btn-default btn-signin-twitter twitter" onclick="hello.login('twitter')">signin twitter</button>
+        -->
+    </p>
+    <p>
+        <a href="./" class="btn btn-logout" onclick="hello.logout()">Logout </a>
+    </p>
+    <p>
+        <a href="phonegap.html" class="btn btn-link">phonegap.html</a>
+        <a href="/phonegap.html" class="btn btn-link">/phonegap.html</a>
+        <a href="./phonegap.html" class="btn btn-link">./phonegap.html</a>
+    </p>
+</div>
+            
+        
+            <script type="text/javascript" src="assets/js/jquery.js"></script>
+            <script type="text/javascript" src="assets/js/hellojs/hello.all.js"></script>
+            <!-- <script type="text/javascript" src="/js/hellojs/client_ids.js"></script> -->
+            <script type="text/javascript" src="assets/js/hellojs/main.js"></script>
+        
     </body>
 </html>
